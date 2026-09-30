@@ -126,6 +126,11 @@ input {
   line-height: 1;
 }
 
+.header-logo-svg {
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
 .header-title {
   font-size: 1.35rem;
   font-weight: 700;

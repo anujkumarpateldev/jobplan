@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './LandingPage.css'
+import Logo from '../Logo.jsx'
 
 const TYPEWRITER_TEXT = 'Crack Every Interview.'
 const TYPEWRITER_DELAY = 80
@@ -139,8 +140,8 @@ export default function LandingPage({ onLogin, onRegister }) {
       <nav className="lp-nav">
         <div className="lp-nav-inner">
           <div className="lp-nav-logo">
-            <span className="lp-nav-logo-icon">👨‍💻</span>
-            <span className="lp-nav-logo-text">SWE Prep Tracker</span>
+            <Logo size={32} />
+            <span className="lp-nav-logo-text">TechUplift</span>
           </div>
           <div className="lp-nav-actions">
             <button className="btn btn-ghost lp-nav-btn" onClick={onLogin}>
@@ -347,11 +348,11 @@ export default function LandingPage({ onLogin, onRegister }) {
       <footer className="lp-footer">
         <div className="lp-footer-inner">
           <div className="lp-footer-logo">
-            <span>👨‍💻</span>
-            <span className="lp-footer-logo-text">SWE Prep Tracker</span>
+            <Logo size={28} />
+            <span className="lp-footer-logo-text">TechUplift</span>
           </div>
           <p className="lp-footer-copy">
-            © {new Date().getFullYear()} SWE Prep Tracker. Built for engineers, by engineers.
+            © {new Date().getFullYear()} TechUplift. Built for engineers, by engineers.
           </p>
           <p className="lp-footer-tagline">Free forever. No credit card. No nonsense.</p>
         </div>

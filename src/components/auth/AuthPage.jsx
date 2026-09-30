@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { supabase } from '../../lib/supabase.js'
+import Logo from '../Logo.jsx'
 
 const AVATARS = [
   '👨‍💻', '👩‍💻', '🧑‍💻', '👨‍🎓', '👩‍🎓', '🧑‍🎓',
@@ -287,9 +288,9 @@ export default function AuthPage({ initialTab = 'login', onBack }) {
         )}
         {/* Logo */}
         <div className="auth-logo">
-          <span className="auth-logo-icon">👨‍💻</span>
+          <Logo size={48} />
           <div>
-            <h1 className="auth-logo-title">SWE Prep Tracker</h1>
+            <h1 className="auth-logo-title">TechUplift</h1>
             <p className="auth-logo-sub">Your personal interview preparation hub</p>
           </div>
         </div>

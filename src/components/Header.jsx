@@ -1,4 +1,5 @@
 import UserMenu from './UserMenu.jsx'
+import Logo from './Logo.jsx'
 
 export default function Header({ totalUnits, doneUnits, onMenuOpen, onDashboard, profile, email, onLogout, onSettings }) {
   const percent = totalUnits === 0 ? 0 : Math.round((doneUnits / totalUnits) * 100)
@@ -28,9 +29,9 @@ export default function Header({ totalUnits, doneUnits, onMenuOpen, onDashboard,
 
         {/* CENTER: logo + app name (absolutely centred) */}
         <div className="header-title-group">
-          <span className="header-logo">👨‍💻</span>
+          <Logo size={36} className="header-logo-svg" />
           <div>
-            <h1 className="header-title">SWE Prep Tracker</h1>
+            <h1 className="header-title">TechUplift</h1>
             <p className="header-subtitle">Interview preparation hub</p>
           </div>
         </div>
